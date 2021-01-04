@@ -1,0 +1,56 @@
+.toolbar{
+  background-color: #3dc2ff;
+  height: 20%;
+}
+.user-div{
+  background-color: #efeeee;
+  height: 30%;
+  margin-top: -10%;
+}
+.user-pic{
+  //backdrop-filter: blur(5px);
+  margin-top: -10%;
+  margin-left: 40%;
+  border-radius: 50%;
+  border-width: thick;
+  border: black 2px;
+  height: 80px;
+}
+.user{
+  padding-left: 20%;
+  justify-content: center;
+  color: black;
+}
+.name{
+  padding-top: 10%;
+  font-size: 22px;
+  font-weight: bolder;
+}
+.contact{
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.user-address{
+  padding-left: 5%;
+}
+.address-head{
+  font-size: 20px;
+  font-weight:normal;
+}
+.user-grid{
+  padding-top: 2%;
+  //height: 10%;
+}
+.col{
+  //padding-top: 3%;
+  padding-left: 10%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  justify-content: center;
+  font-size: 12px;
+}
+.divider{
+  border-right: 1px black solid;
+  //justify-content: center;
+}

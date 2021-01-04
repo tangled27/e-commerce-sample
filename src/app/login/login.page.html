@@ -1,0 +1,41 @@
+<ion-header>
+<!--  <ion-toolbar>-->
+<!--&lt;!&ndash;    <ion-title>Login</ion-title>&ndash;&gt;-->
+<!--&lt;!&ndash;    <ion-icon name="arrow-back"></ion-icon>&ndash;&gt;-->
+<!--  </ion-toolbar>-->
+</ion-header>
+
+<ion-content>
+  <ion-icon name="arrow-back-sharp" size="large" (click)="navigate()"></ion-icon>
+  <div class="login-head"> Login </div>
+  <div class="login-form">
+    <ion-item class="input-item">
+    <ion-label position="floating">Username </ion-label>
+    <ion-input required="true" [(ngModel)]="username"> </ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+    <ion-label position="floating">Password </ion-label>
+    <ion-input required="true" [(ngModel)]="password"> </ion-input>
+    </ion-item>
+
+    <ion-button class="login-btn" expand="block"> Log in </ion-button>
+
+    <ul class="center-div"> Forgot Password ? </ul>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col size="5"> <div class="line-colm"></div></ion-col>
+        <ion-col size="1"> <div> &nbsp; or </div> </ion-col>
+        <ion-col size="6"> <div class="line-colm"></div></ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-button class="btn" expand="block" fill="outline" > Log in with phone number </ion-button>
+
+    <div class="last-line"> Do not have an account?
+      <span > <a class="signup" (click)="navigate()"> Sign up </a>  </span>
+    </div>
+<!--    <a [routerLink]="" (click)="onGoToPage2()">Go to page</a>-->
+  </div>
+</ion-content>

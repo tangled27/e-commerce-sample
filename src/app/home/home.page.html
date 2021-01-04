@@ -1,0 +1,164 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-grid>
+            <ion-row class="logo-toolbar">
+                <ion-col size="2">
+                    <ion-icon name="menu" size="large"></ion-icon>
+                </ion-col>
+                <ion-col size="8">
+<!--                    <img class="logo-image" src="assets/logo.jpg">-->
+                    <ion-label class="logo-image"> LOGO </ion-label>
+                </ion-col>
+                <ion-col size="2" >
+                    <ion-icon name="notifications" size="medium"></ion-icon>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-item class="search-bar">
+                    <ion-icon class="search-icon" name="search" (click)="showSearchPage()"></ion-icon>
+                    <ion-input class="search-input" placeholder="search items"></ion-input>
+                </ion-item>
+            </ion-row>
+        </ion-grid>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" scrollable>
+<!--  <ion-header collapse="condense">-->
+<!--    <ion-toolbar>-->
+<!--      <ion-title size="large">Tab main</ion-title>-->
+<!--    </ion-toolbar>-->
+<!--  </ion-header>-->
+
+    <div class="home-content" *ngIf="!showSearch">
+        <ion-slides pager="true">
+            <ion-slide>
+                <img src="assets/walmart-deals.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="assets/walmart-deals.jpg">
+            </ion-slide>
+            <ion-slide>
+                <img src="assets/walmart-deals.jpg">
+            </ion-slide>
+        </ion-slides>
+
+
+    <ion-grid class="category-grid" *ngIf="!showSearch">
+        <ion-row>
+            <ion-col size="4" class="section-head"> Category </ion-col>
+            <ion-col size="6"></ion-col>
+            <ion-col size="2">
+                <span> <a (click)="goToCategoryPage()"> See all </a></span>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="3">
+                <button class="btn-category">
+                   <ion-icon name="laptop" size="large"></ion-icon>
+                </button>
+                <ion-label> Laptops </ion-label>
+            </ion-col>
+            <ion-col size="3">
+                <button class="btn-category">
+                    <ion-icon name="football" size="large"></ion-icon>
+                </button>
+                <ion-label> Sports </ion-label>
+            </ion-col>
+            <ion-col size="3">
+                <button class="btn-category">
+                    <ion-icon name="pizza" size="large"></ion-icon>
+                </button>
+                <ion-label> Food </ion-label>
+            </ion-col>
+            <ion-col size="3">
+                <button class="btn-category">
+                    <ion-icon name="school" size="large"></ion-icon>
+                </button>
+                <ion-label> Stationery </ion-label>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <ion-grid class="home-content deals">
+        <ion-row>
+            <ion-col size="4" class="section-head"> Hot Deals</ion-col>
+            <ion-col size="6"></ion-col>
+            <ion-col size="2">
+                <span> <a (click)="goToCategoryPage()"> See all </a></span>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="6" (click)="goToProductDetails()">
+                <div class="deals-card">
+                    <img src="assets/laptop-acer-celeron.jpg">
+                    <div class="deals-title">Acer Intel Celeron</div>
+                    <div class="subtitle">$500</div>
+                    <div class="stars">
+                        <ion-icon name="star" *ngFor="let num of [1,2,3,4,5]"></ion-icon>
+                    </div>
+                </div>
+            </ion-col>
+            <ion-col size="6">
+                <div class="deals-card">
+                    <img src="assets/laptop-chrome.jpeg">
+                    <div class="deals-title">Chromebook </div>
+                    <div class="subtitle">$700</div>
+                    <div class="stars">
+                        <ion-icon name="star" *ngFor="let num of [1,2,3,4,5]"></ion-icon>
+                    </div>
+                </div>
+            </ion-col>
+            </ion-row>
+
+        <ion-row>
+            <ion-col size="6">
+                <div class="deals-card">
+                    <img src="assets/laptop-dell-xps15.webp">
+                    <div class="deals-title">Dell XPS 15</div>
+                    <div class="subtitle">$600</div>
+                </div>
+            </ion-col>
+            <ion-col size="6">
+                <div class="deals-card">
+                    <img src="assets/laptop-ideapad.jpg">
+                    <div class="deals-title">Lenovo Ideapad</div>
+                    <div class="subtitle">$600</div>
+                    <div class="stars">
+                        <ion-icon name="star" *ngFor="let num of [1,2,3,4,5]"></ion-icon>
+                    </div>
+                </div>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col size="6">
+                <div class="deals-card">
+                    <img src="assets/laptop-macbook.jpg">
+                    <div class="deals-title">Macbook pro</div>
+                    <div class="subtitle">$1200</div>
+                    <div class="stars">
+                        <ion-icon name="star" *ngFor="let num of [1,2,3,4,5]"></ion-icon>
+                    </div>
+                </div>
+            </ion-col>
+            <ion-col size="6">
+                <div class="deals-card">
+                    <img src="assets/laptop-mssurface.png">
+                    <div class="deals-title">Microsoft Surface</div>
+                    <div class="subtitle">$1000</div>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    </div>
+
+    <div class="home-content" *ngIf="showSearch">
+        <ion-list lines>
+
+        </ion-list>
+    </div>
+<!--  <app-explore-container name="Tab 1 page"></app-explore-container>-->
+</ion-content>

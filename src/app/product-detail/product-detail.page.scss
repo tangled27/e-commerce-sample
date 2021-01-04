@@ -1,0 +1,42 @@
+.pic-div{
+  margin: 0;
+  height: 40%;
+  width: 100%;
+}
+ion-slides{
+  height: 100%;
+  width: 100%;
+}
+.product-details{
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: white;
+  border-top: grey 4px;
+  height: 100%;
+}
+.name{
+  padding: 10px;
+  font-weight: bolder;
+  font-size: larger;
+  color: black;
+}
+.amount-div{
+  padding: 5%;
+  font-size: large;
+  font-weight: normal;
+  color: black;
+}
+.info-div{
+  background-color: white;
+  padding: 5%;
+  font-size: small;
+}
+.info-tabs{
+  padding: 5px 15px 10px 15px;
+  font-size: medium;
+  color: black;
+  border-bottom: 1px grey solid;
+}
+.spec-div{
+  padding: 5px 2px 2px 5px;
+}

@@ -1,0 +1,86 @@
+<!--<ion-header>-->
+<!--  <ion-toolbar>-->
+<!--&lt;!&ndash;    <ion-title>user-profile</ion-title>&ndash;&gt;-->
+<!--    <img class="user-pic" src="assets/user-sample.png">-->
+<!--  </ion-toolbar>-->
+<!--</ion-header>-->
+
+<ion-content class="profile-content">
+  <div class="toolbar">
+<!--    <img class="user-pic" src="assets/user-sample.png">-->
+  </div>
+  <img class="user-pic" src="assets/user-sample.png">
+  <div class="user-div">
+    <div class="user">
+      <div class="user name">Alex Sandro</div>
+      <div class="user contact">hksdfk@gmail.com</div>
+      <div class="user contact">+1 123 456 789</div>
+    </div>
+
+    <div class="user-grid">
+    <ion-grid>
+    <ion-row>
+      <ion-col size="4" class="col divider">
+        <div class="name">20</div>
+        <div >wishlists</div>
+      </ion-col>
+
+      <ion-col size="4" class="col divider">
+        <div class="name">100</div>
+        <div >Reward points</div>
+      </ion-col>
+
+      <ion-col size="4" class="col">
+        <div class="name">5</div>
+        <div >Order History</div>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+    </div>
+  </div>
+
+  <div>
+    <ion-list lines="full">
+      <ion-item>
+        <ion-icon name="heart" slot="start"></ion-icon>
+        <ion-label>Wishlist</ion-label>
+        <ion-icon name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="archive" slot="start"></ion-icon>
+        <ion-label>Order History</ion-label>
+        <ion-icon name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="reload" slot="start"></ion-icon>
+        <ion-label>Transcations</ion-label>
+        <ion-icon name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="mail" slot="start"></ion-icon>
+        <ion-label>Newsletter</ion-label>
+        <ion-icon name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="gift" slot="start"></ion-icon>
+        <ion-label>Reward points</ion-label>
+        <ion-icon name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <br/>
+    <div class="user-address">
+      <div class="user-address address-head"> Contact Adress</div>
+      <div class="user-address contact">House 1, Road 2, Block J, Baridhara, Dhaka </div>
+    </div>
+
+    <br/>
+    <br/>
+
+
+  <ion-button expand="block" fill="outline" (click)="goToLogin()">
+    Log in
+  </ion-button>
+  </div>
+</ion-content>

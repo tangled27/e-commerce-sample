@@ -1,0 +1,121 @@
+ion-toolbar{
+  --background: #3dc2ff;
+}
+.ion-icon{
+  --color: white;
+}
+.ion-label{
+
+}
+.logo-toolbar{
+  height: 30%;
+}
+.logo-image{
+  padding-left: 30%;
+  height: 20%;
+  width: 10%;
+  justify-content: center;
+}
+.search-bar{
+  padding-left: 8%;
+  height: 20%;
+  width: 90%;
+  --border-radius: 22px;
+  justify-content: center;
+  --highlight-height: 0;
+}
+.search-icon{
+  padding-left: 2%;
+  padding-right: 3%;
+  font-size: larger;
+  font-weight: 120;
+  color: #0d0d0d;
+  //height: 10%;
+}
+.search-input{
+  padding-left: 5%;
+  height: 100%;
+}
+.category-grid{
+  margin-left: 2%;
+  margin-top: 2%;
+  justify-content: center;
+}
+//.ion-thumbnail{
+//  --border-radius: 100%;
+//  --size: 10%;
+//}
+.category-icon{
+  //margin: 5%;
+  //--border-radius: 100%;
+  //--background: transparent;
+  --height: 50%;
+  --width: 30%;
+  //font-size: xx-large;
+  //font-weight: 150;
+}
+.home-content{
+  padding-left: 1%;
+  padding-top: 3%;
+  //background-color: #efeeee;
+}
+.deals{
+  background-color: #efeeee;
+}
+
+ion-slides{
+  height: 20%;
+  width: 90%;
+}
+ion-label{
+  margin: 10%;
+  font-weight: 150;
+  font-size: 15px;
+  color: black;
+}
+.section-head{
+  //margin-top: 2%;
+  font-weight: bolder;
+  font-size: 17px;
+  color: black;
+}
+
+.deals-title{
+  margin-top: 5%;
+  margin-left: 10%;
+  font-weight: bolder;
+  font-size: 15px;
+  color: black;
+}
+.subtitle{
+  margin-top: 5%;
+  margin-left: 10%;
+  font-weight: bold;
+  font-size: 17px;
+  color: #3dc2ff;
+}
+.stars{
+  margin-top: 5%;
+  margin-left: 10%;
+  color: orange;
+}
+.btn-category{
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  //text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+.btn-category:hover {background-color: #e7e7e7;}
+
+.deals-card{
+  background-color: white;
+  border: lightgrey;
+  height: 100%;
+  width: auto;
+}
