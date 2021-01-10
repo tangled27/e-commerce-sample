@@ -1,0 +1,37 @@
+.cart-item{
+  height: 30%;
+  width: 99%;
+  padding: 10px 1px 15px 5px;
+  border: #3dc2ff 1px solid;
+}
+
+.cart-item-img{
+
+  padding-left: 2px;
+  height: 20%;
+  width: 40%;
+}
+
+.cart-item-info{
+
+  padding-top: 0px;
+}
+
+.item-name{
+  padding-top: 1px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.item-price{
+  padding-top: 1px;
+  font-size: small;
+  font-weight: normal;
+}
+.quantity-col{
+  border: #cde1ea 1px solid;
+  padding: 2px 5px 2px 5px;
+}
+.btn{
+  background-color: lightgrey;
+}

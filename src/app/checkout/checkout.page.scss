@@ -1,0 +1,32 @@
+.headline{
+  padding-left: 15px;
+  margin-top: 15px;
+}
+.done{
+  font-size: larger;
+  color: #179fb8;
+  font-weight: bold;
+}
+ion-item{
+  //--border-color: grey;
+  //--border-width: 2px;
+  //--background: lightgrey;
+  --color: #286581;
+  ////overflow: hidden;
+  //margin: 1px auto;
+  //width: 90%;
+  //height: 20%;
+  //--highlight-height: 0;
+  --inner-box-shadow: lightgrey;
+}
+
+ion-input{
+  --color: black;
+}
+.proceed-btn{
+  --background: #3dc2ff;
+  //height: 20%;
+  width: 80%;
+  margin: 10px auto;
+}
+

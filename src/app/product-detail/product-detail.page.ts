@@ -6,7 +6,7 @@ import {Router } from '@angular/router';
   styleUrls: ['./product-detail.page.scss'],
 })
 export class ProductDetailPage implements OnInit {
-  content: any;
+  content: string = null;
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -17,7 +17,7 @@ export class ProductDetailPage implements OnInit {
     if (tabNumber === 'tab1') {
       document.getElementById('tab2').style.color = document.getElementById('tab3').style.color = 'black';
       document.getElementById('tab2').style.borderBottom = document.getElementById('tab3').style.borderBottom = '1px grey solid ';
-      this.content = 'this is specification'; }
+      this.content = 'specification'; }
     else if (tabNumber === 'tab2' ) {
       document.getElementById('tab1').style.color = document.getElementById('tab3').style.color = 'black';
       document.getElementById('tab1').style.borderBottom = document.getElementById('tab3').style.borderBottom = '1px grey solid';
